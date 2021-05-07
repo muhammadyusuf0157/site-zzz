@@ -1,0 +1,163 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+@keyframes bekhan
+{
+    0%{
+        opacity: 0;
+        transform: translateZ(-1000px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes bek
+{
+    0%{
+        opacity: 0;
+        transform: translateY(-1000px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+body
+{
+    animation: bek 2.4s linear forwards;
+    animation-delay: 0.1s;
+}
+h5
+{
+    font-stretch: extra-condensed;
+}
+.section
+{
+    min-height: 49vw;
+    background: url(./sayt/avto1.jpg)no-repeat  center #212529;
+}
+.bottom
+{
+    display: grid;
+    position: relative;
+}
+.bottom  a
+{   
+    line-height: 30px;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.bottom  a li
+{
+    background:repeating-linear-gradient(1deg,black,white);
+    list-style: none;
+    justify-content: center;
+    display: flex;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-shadow: 1px 0px 5px white;
+    transition: 0.5s;
+}
+li.li-one:hover 
+{
+    color: transparent;
+    text-shadow: none;
+}
+li.li-one:hover::after
+{
+    text-shadow: 1px 0px 5px white;
+    color: white;
+    content: 'Nomi:  BMW   , Rangi:  Zangor    , ishlab   chiqilgan  sana:   2021';
+    margin-left: -70%;
+    transition: 0.5s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+li.li-two:hover 
+{
+    color: transparent;
+    text-shadow: none;
+}
+li.li-two:hover::after
+{
+    text-shadow: 1px 0px 5px white;
+    color: white;
+    content: '30 000 $';
+    margin-left: -10%;
+    transition: 0.5s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+li.li-three
+{   
+    cursor: pointer;
+    list-style: none;
+    background: repeating-linear-gradient(0deg, black, transparent 100px);
+    justify-content: center;
+    text-align: center;
+} 
+li.li-three a
+{
+    background: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-shadow: 1px 0px 5px white;
+  
+}
+ul
+{
+    display: none;
+}
+ul
+{
+    justify-content: space-around;
+    position: relative;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    background:currentColor;
+}
+ul li a
+{   
+    font-size: 1.2em;
+    font-weight: 600;
+    text-shadow: 1px 0px 5px white;   
+}
+.rasmlar
+{   
+    padding: 10px 25px;
+    margin-bottom: 10px;
+    display: table;
+    flex-wrap: wrap;
+    position: relative;
+}
+.rasmlar .rasm
+{
+    margin-bottom: 10px;
+    padding:10px;
+    width: 150px;
+    height: 150px;
+}
+.rasmlar .rasm img
+{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-left: 5px;
+}
+.tt
+{
+    display: flex;
+}
+.qator
+{
+    display: flex;
+}
